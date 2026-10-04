@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "59199796345",
+    "project_id": "advo-earn-real-earn",
+    "storage_bucket": "advo-earn-real-earn.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:59199796345:android:58ce01ee16e48c2996d0a8",
+        "android_client_info": {
+          "package_name": "com.example.advoearn"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "59199796345-cfmavliqq35s49o6ul1kosef4g1dacf8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDZYNXAGlTg4OMQKrHP37a4A0iTGurDCAQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "59199796345-cfmavliqq35s49o6ul1kosef4g1dacf8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
