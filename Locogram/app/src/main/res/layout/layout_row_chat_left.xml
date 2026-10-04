@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:id="@+id/message_layout"
+    android:paddingBottom="5dp"
+    android:paddingEnd="50dp"
+    android:paddingStart="5dp">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="wrap_content"
+        android:layout_gravity="start"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/messageTv_receive"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_receiver"
+            android:padding="15dp"
+            android:text=""
+            android:gravity="left"
+            android:visibility="gone"
+            android:textColor="@color/secondary_color"
+            android:textSize="13dp"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:ignore="MissingConstraints" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="@+id/messageTv_receive"
+            app:layout_constraintStart_toStartOf="@+id/messageTv_receive"
+            app:layout_constraintTop_toBottomOf="@+id/messageTv_receive"
+            tools:ignore="MissingConstraints">
+
+            <ImageView
+                android:id="@+id/sender_reaction"
+                android:visibility="gone"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="3dp"
+                android:src="@mipmap/emoji3" />
+
+            <ImageView
+                android:id="@+id/receiver_reaction"
+                android:visibility="gone"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="3dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:src="@mipmap/emoji5" />
+
+
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="wrap_content"
+        android:layout_gravity="left"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/messageIv_receive_Layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_receiver"
+            android:visibility="gone"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:ignore="MissingConstraints">
+
+            <TextView
+                android:id="@+id/messageIv_Status"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="5dp"
+                android:gravity="center"
+                android:text="Received"
+                android:textColor="@color/secondary_color"
+                android:textSize="13dp"
+                android:visibility="visible"
+                app:layout_constraintEnd_toEndOf="parent"
+                tools:ignore="MissingConstraints" />
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/messageIv_receive"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_toEndOf="@+id/messageIv_Status"
+                android:background="@color/white"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_baseline_mic_24"
+                app:shapeAppearance="@style/Circular" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="@+id/messageIv_receive_Layout"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/messageIv_receive_Layout"
+            tools:ignore="MissingConstraints">
+
+            <ImageView
+                android:id="@+id/sender_reaction_image"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="3dp"
+                android:src="@mipmap/emoji3"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/receiver_reaction_image"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="3dp"
+                android:src="@mipmap/emoji5"
+                android:visibility="gone" />
+
+
+        </LinearLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:gravity="start"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/messageTime_receive"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="03/01/2023 05:23PM"
+            android:textSize="10dp"
+            android:layout_marginTop="3dp"
+            android:layout_gravity="start"
+            android:textColor="@color/Dark_grey"/>
+        <TextView
+            android:id="@+id/messageSeen_TV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="delivered"
+            android:layout_marginStart="15dp"
+            android:textSize="10dp"
+            android:layout_gravity="start"
+            android:visibility="gone"
+            android:textColor="@color/Dark_grey"/>
+
+    </LinearLayout>
+
+</LinearLayout>

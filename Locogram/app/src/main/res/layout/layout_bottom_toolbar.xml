@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:background="@color/white"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:elevation="5dp"
+    android:layout_height="?actionBarSize"
+    android:orientation="horizontal"
+    android:layout_gravity="bottom"
+    android:layout_weight="5"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:id="@+id/home_ll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="10dp"
+        android:layout_weight="1"
+        android:background="@color/white"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/bottom_toolbar_imageview_1"
+            android:layout_width="20dp"
+            android:layout_height="25dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/ic_baseline_home_24" />
+
+        <TextView
+            android:id="@+id/bottom_toolbar_textview_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/bottom_toolbar_imageview_1"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:gravity="center"
+            android:text="Home"
+            android:textSize="10dp" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_marginBottom="10dp"
+        android:id="@+id/stores_ll"
+        android:background="@color/white"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/bottom_toolbar_imageview_2"
+            android:layout_width="20dp"
+            android:layout_height="25dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/ic_baseline_stores"/>
+
+        <TextView
+            android:id="@+id/bottom_toolbar_textview_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/bottom_toolbar_imageview_2"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:gravity="center"
+            android:layout_alignParentBottom="true"
+            android:text="Stores"
+            android:textSize="10dp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/post_ll"
+        android:gravity="center"
+        android:layout_marginBottom="10dp"
+        android:background="@color/white"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/bottom_toolbar_imageview_3"
+            android:layout_width="20dp"
+            android:layout_height="25dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/ic_baseline_control_point_24"/>
+
+        <TextView
+            android:id="@+id/bottom_toolbar_textview_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/bottom_toolbar_imageview_3"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:gravity="center"
+            android:text="Post"
+            android:textSize="10dp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_marginBottom="10dp"
+        android:id="@+id/chats_ll"
+        android:gravity="center"
+        android:background="@color/white"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <ImageView
+            android:id="@+id/bottom_toolbar_imageview_4"
+            android:layout_width="22dp"
+            android:layout_height="25dp"
+            android:paddingStart="1dp"
+            android:layout_centerHorizontal="true"
+            android:paddingEnd="1dp"
+            android:layout_alignParentTop="true"
+            android:src="@drawable/ic_baseline_email_24"/>
+
+        <TextView
+            android:id="@+id/bottom_toolbar_textview_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/bottom_toolbar_imageview_4"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:gravity="center"
+            android:text="Chat"
+            android:textSize="10dp" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/chatList_bottom_bar_ind"
+            android:layout_width="8dp"
+            android:visibility="gone"
+            android:layout_height="8dp"
+            android:layout_alignEnd="@+id/bottom_toolbar_imageview_4"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="3dp"
+            android:background="@color/white"
+            android:scaleType="centerCrop"
+            android:src="@drawable/background_circle_red"
+            app:shapeAppearance="@style/Circular" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_marginBottom="10dp"
+        android:id="@+id/profile_ll"
+        android:gravity="center"
+        android:background="@color/white"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/bottom_toolbar_imageview_5"
+            android:layout_width="20dp"
+            android:layout_height="25dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/ic_baseline_account_profile_new"/>
+
+        <TextView
+            android:id="@+id/bottom_toolbar_textview_5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/bottom_toolbar_imageview_5"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:gravity="center"
+            android:text="Profile"
+            android:textSize="10dp" />
+
+
+    </RelativeLayout>
+
+</LinearLayout>
