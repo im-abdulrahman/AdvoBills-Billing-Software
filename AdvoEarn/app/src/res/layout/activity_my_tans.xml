@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".Home.MyTansActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <!-- todo : wallet layout !-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="bottom"
+                android:layout_gravity="center"
+                android:background="@drawable/top_background_curve"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical">
+
+                    <!-- todo : ui design (home user info ) !-->
+
+                    <TextView
+                        android:id="@+id/home_acc_name"
+                        android:layout_marginTop="25dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Hello, loading ....."
+                        android:textColor="@color/black"
+                        android:textSize="15dp"
+                        android:layout_marginBottom="15dp"
+                        android:textStyle="bold"
+                        android:maxLines="1"
+                        android:layout_marginStart="65dp"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="250dp"
+                    android:layout_height="115dp"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="bottom"
+                    android:background="@drawable/pink_light_background_curve"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="250dp"
+                        android:layout_height="100dp"
+                        android:weightSum="2"
+                        android:background="@drawable/pink_background_curve"
+                        android:orientation="horizontal">
+
+                        <!-- code here !-->
+
+                        <LinearLayout
+                            android:layout_weight="1"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Wallet"
+                                android:textColor="@color/white"
+                                android:textSize="12dp"
+                                android:textStyle="bold"
+                                android:layout_marginStart="15dp"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="balance"
+                                android:textColor="@color/white"
+                                android:textSize="12dp"
+                                android:textStyle="italic"
+                                android:layout_marginStart="15dp"/>
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="= "
+                                    android:layout_marginTop="5dp"
+                                    android:textColor="@color/yellow_text"
+                                    android:textSize="15dp"
+                                    android:textStyle="bold"
+                                    android:layout_marginStart="15dp"/>
+                                <TextView
+                                    android:id="@+id/home_acc_balance"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="00000"
+                                    android:layout_marginTop="5dp"
+                                    android:textColor="@color/yellow_text"
+                                    android:textSize="15dp"
+                                    android:textStyle="bold"/>
+
+                            </LinearLayout>
+
+
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_weight="1"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginEnd="5dp"
+                                android:src="@drawable/coins_chart"
+                                android:tint="@color/pink_500"
+                                tools:ignore="UseAppTint" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <!-- todo : text view layout !-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="left"
+                android:background="@color/white"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:maxLines="1"
+                    android:text="My Transactions"
+                    android:textColor="@color/Dark_grey"
+                    android:textSize="12dp"
+                    android:textStyle="bold"
+                    tools:ignore="TextSizeCheck" />
+
+
+            </LinearLayout>
+
+            <!-- todo : recycler layout !-->
+            <LinearLayout
+                android:id="@+id/myTransTab_recycleView"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_horizontal"
+                android:background="@color/white"
+                android:orientation="horizontal">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginEnd="25dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="70dp"/>
+
+            </LinearLayout>
+
+            <!-- todo : empty layout !-->
+            <LinearLayout
+                android:id="@+id/myTransTab_emptyState"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_horizontal"
+                android:layout_marginTop="30dp"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginTop="35dp"
+                    android:layout_marginEnd="25dp"
+                    android:src="@drawable/empty_state_icon"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="15dp"
+                    android:text="not found !"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="12dp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginEnd="15dp"
+                    android:layout_marginBottom="25dp"
+                    android:text="you have not made any transactions yet "
+                    android:textAlignment="center"
+                    android:textColor="@color/Dark_grey"
+                    android:textSize="12dp"/>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

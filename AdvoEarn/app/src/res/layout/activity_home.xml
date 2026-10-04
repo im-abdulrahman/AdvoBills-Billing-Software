@@ -1,0 +1,510 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".Home.HomeActivity">
+
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="bottom"
+                    android:layout_gravity="center"
+                    android:background="@drawable/top_background_curve"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="vertical">
+
+                        <!-- todo : ui design (home user info ) !-->
+
+                        <TextView
+                            android:id="@+id/home_acc_name"
+                            android:layout_marginTop="25dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Hello, loading ....."
+                            android:textColor="@color/black"
+                            android:textSize="15dp"
+                            android:layout_marginBottom="15dp"
+                            android:textStyle="bold"
+                            android:maxLines="1"
+                            android:layout_marginStart="65dp"/>
+
+                        <TextView
+                            android:visibility="gone"
+                            android:id="@+id/home_acc_totalA"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="0"
+                            android:textColor="@color/black"
+                            android:textSize="15dp"
+                            android:textStyle="bold"
+                            android:maxLines="1"
+                            android:layout_marginStart="65dp"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="250dp"
+                        android:layout_height="115dp"
+                        android:layout_gravity="center_horizontal"
+                        android:gravity="bottom"
+                        android:background="@drawable/pink_light_background_curve"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="250dp"
+                            android:layout_height="100dp"
+                            android:weightSum="2"
+                            android:background="@drawable/pink_background_curve"
+                            android:orientation="horizontal">
+
+                            <!-- code here !-->
+
+                            <LinearLayout
+                                android:layout_weight="1"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:gravity="center_vertical"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Wallet"
+                                    android:textColor="@color/white"
+                                    android:textSize="12dp"
+                                    android:textStyle="bold"
+                                    android:layout_marginStart="15dp"/>
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="balance"
+                                    android:textColor="@color/white"
+                                    android:textSize="12dp"
+                                    android:textStyle="italic"
+                                    android:layout_marginStart="15dp"/>
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="= "
+                                        android:layout_marginTop="5dp"
+                                        android:textColor="@color/yellow_text"
+                                        android:textSize="15dp"
+                                        android:textStyle="bold"
+                                        android:layout_marginStart="15dp"/>
+                                    <TextView
+                                        android:id="@+id/home_acc_balance"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="00000"
+                                        android:layout_marginTop="5dp"
+                                        android:textColor="@color/yellow_text"
+                                        android:textSize="15dp"
+                                        android:textStyle="bold"/>
+
+                                </LinearLayout>
+
+
+
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_weight="1"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:gravity="center_vertical"
+                                android:orientation="vertical">
+
+                             <ImageView
+                                 android:layout_width="match_parent"
+                                 android:layout_height="match_parent"
+                                 android:layout_marginEnd="5dp"
+                                 android:src="@drawable/coins_chart"
+                                 android:tint="@color/pink_500"
+                                 tools:ignore="UseAppTint" />
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:paddingStart="20dp"
+                    android:paddingEnd="20dp"
+                    android:paddingTop="20dp"
+                    android:paddingBottom="10dp"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:id="@+id/home_tab_myTrans"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center"
+                        android:backgroundTint="@color/pink_500"
+                        android:background="@drawable/silver_background">
+
+                        <ImageView
+                            android:layout_width="22dp"
+                            android:layout_height="22dp"
+                            android:src="@drawable/baseline_notifications_24"
+                            android:layout_gravity="center"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="15dp"
+                            android:text="My Transactions"
+                            android:textColor="@color/pink_200"
+                            android:textSize="12dp"
+                            android:textStyle="bold"
+                            android:maxLines="1"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:paddingStart="20dp"
+                    android:paddingEnd="20dp"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:id="@+id/home_tab_leaderBoard"
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_marginEnd="4dp"
+                        android:gravity="center"
+                        android:background="@drawable/silver_background">
+
+                        <ImageView
+                            android:src="@drawable/coin_png"
+                            android:scaleType="centerCrop"
+                            android:layout_marginTop="10dp"
+                            android:layout_centerHorizontal="true"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="5dp"
+                            android:maxLines="1"
+                            android:text="Leader Board"
+                            android:textColor="@color/Dark_grey"
+                            android:textSize="10dp"
+                            android:textStyle="bold"
+                            tools:ignore="TextSizeCheck" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginEnd="10dp"
+                            android:layout_marginBottom="15dp"
+                            android:gravity="center"
+                            android:text="Earn 10000 Coins"
+                            android:textColor="@color/pink_200"
+                            android:textSize="10dp"
+                            android:textStyle="bold"
+                            tools:ignore="TextSizeCheck" />
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/home_tab_adsTask"
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="4dp"
+                        android:layout_marginEnd="4dp"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:background="@drawable/silver_background">
+
+                        <ImageView
+                            android:src="@drawable/coin_png"
+                            android:scaleType="centerCrop"
+                            android:layout_marginTop="10dp"
+                            android:layout_centerHorizontal="true"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="5dp"
+                            android:maxLines="1"
+                            android:text="Ads Task"
+                            android:textColor="@color/Dark_grey"
+                            android:textSize="10dp"
+                            android:textStyle="bold"
+                            tools:ignore="TextSizeCheck" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginEnd="10dp"
+                            android:layout_marginBottom="15dp"
+                            android:gravity="center"
+                            android:text="Earn 10000 Coins"
+                            android:textColor="@color/pink_200"
+                            android:textSize="10dp"
+                            android:textStyle="bold"
+                            tools:ignore="TextSizeCheck" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/home_tab_scratchTask"
+                        android:layout_weight="1"
+                        android:layout_marginStart="4dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:background="@drawable/silver_background">
+
+                        <ImageView
+                            android:src="@drawable/coin_png"
+                            android:scaleType="centerCrop"
+                            android:layout_marginTop="10dp"
+                            android:layout_centerHorizontal="true"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="5dp"
+                            android:maxLines="1"
+                            android:text="Scratch Task"
+                            android:textColor="@color/Dark_grey"
+                            android:textSize="10dp"
+                            android:textStyle="bold"
+                            tools:ignore="TextSizeCheck" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginEnd="10dp"
+                            android:layout_marginBottom="15dp"
+                            android:gravity="center"
+                            android:text="Earn 10000 Coins"
+                            android:textColor="@color/pink_200"
+                            android:textSize="10dp"
+                            android:textStyle="bold"
+                            tools:ignore="TextSizeCheck" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:maxLines="1"
+                    android:text="Earn more coins"
+                    android:textColor="@color/Dark_grey"
+                    android:textSize="12dp"
+                    android:textStyle="bold"
+                    tools:ignore="TextSizeCheck" />
+
+                <LinearLayout
+                    android:id="@+id/home_tab_scratchCard"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="5dp"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:gravity="center"
+                    android:backgroundTint="@color/yellow_text"
+                    android:background="@drawable/silver_background">
+
+                    <ImageView
+                        android:src="@drawable/home_ic_scratch"
+                        android:layout_marginTop="10dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_width="match_parent"
+                        android:layout_height="70dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:maxLines="1"
+                        android:text="Scratch Cards"
+                        android:textColor="@color/Dark_grey"
+                        android:textSize="12dp"
+                        android:textStyle="bold"
+                        tools:ignore="TextSizeCheck" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginBottom="15dp"
+                        android:gravity="center"
+                        android:text="unlimited scratch cards"
+                        android:textColor="@color/pink_200"
+                        android:textSize="10dp"
+                        android:textStyle="bold"
+                        tools:ignore="TextSizeCheck" />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/home_tab_watchAds"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="10dp"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:gravity="center"
+                    android:backgroundTint="#96DED1"
+                    android:background="@drawable/silver_background">
+
+                    <ImageView
+                        android:src="@drawable/home_ic_ads"
+                        android:layout_marginTop="10dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_width="match_parent"
+                        android:layout_height="70dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:maxLines="1"
+                        android:text="Watch Ads"
+                        android:textColor="@color/Dark_grey"
+                        android:textSize="12dp"
+                        android:textStyle="bold"
+                        tools:ignore="TextSizeCheck" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginBottom="15dp"
+                        android:gravity="center"
+                        android:text="watch and earn coins"
+                        android:textColor="@color/pink_200"
+                        android:textSize="10dp"
+                        android:textStyle="bold"
+                        tools:ignore="TextSizeCheck" />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/home_tab_referEarn"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="100dp"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:gravity="center"
+                    android:backgroundTint="#EADDCA"
+                    android:background="@drawable/silver_background">
+
+                    <ImageView
+                        android:src="@drawable/home_ic_refer"
+                        android:layout_marginTop="10dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_width="match_parent"
+                        android:layout_height="70dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:maxLines="1"
+                        android:text="Refer and Earn"
+                        android:textColor="@color/Dark_grey"
+                        android:textSize="12dp"
+                        android:textStyle="bold"
+                        tools:ignore="TextSizeCheck" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginBottom="15dp"
+                        android:gravity="center"
+                        android:text="invite to earn more coins"
+                        android:textColor="@color/pink_200"
+                        android:textSize="10dp"
+                        android:textStyle="bold"
+                        tools:ignore="TextSizeCheck" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+
+    <include
+        android:id="@+id/bottom_navi_final"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:layout_alignParentBottom="true"
+        layout="@layout/fragment_bottom_navigation"/>
+
+
+</RelativeLayout>

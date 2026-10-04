@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    android:paddingBottom="10dp"
+    android:background="@drawable/white_box_background"
+    android:elevation="5dp"
+    android:layout_margin="55dp">
+
+
+    <ImageView
+        android:id="@+id/rewardDialog_imageView"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginEnd="25dp"
+        android:src="@drawable/reward_icon"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/rewardDialog_headerText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="15dp"
+        android:text="Congratulations !"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="12dp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/rewardDialog_alertText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:text="You Earned 5 Coins"
+        android:textAlignment="center"
+        android:textColor="@color/Dark_grey"
+        android:textSize="12dp"/>
+
+    <TextView
+        android:id="@+id/rewardDialog_checkWalletText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="35dp"
+        android:background="@drawable/silver_box_background"
+        android:padding="10dp"
+        android:text="check my wallet"
+        android:textAlignment="center"
+        android:textColor="@color/Dark_grey"
+        android:textSize="12dp"/>
+
+    <TextView
+        android:id="@+id/rewardDialog_WatchAgainText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="35dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/pink_box_background"
+        android:padding="10dp"
+        android:text="Watch Again"
+        android:textAlignment="center"
+        android:textColor="@color/pink_200"
+        android:textSize="12dp"/>
+
+    <TextView
+        android:id="@+id/rewardDialog_noThanksText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginStart="35dp"
+        android:layout_marginEnd="35dp"
+        android:layout_marginBottom="15dp"
+        android:text="No, Thanks"
+        android:textAlignment="center"
+        android:textColor="@color/Dark_grey"
+        android:textSize="12dp"
+        android:textStyle="bold"/>
+
+</LinearLayout>

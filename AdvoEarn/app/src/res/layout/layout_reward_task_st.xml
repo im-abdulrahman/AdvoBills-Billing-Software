@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/white_box_background"
+        android:elevation="2dp"
+        android:orientation="vertical">
+
+    <!-- todo: top layout -->
+    <LinearLayout
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <ImageView
+                android:src="@drawable/coin_png"
+                android:scaleType="centerCrop"
+                android:layout_marginStart="15dp"
+                android:layout_centerHorizontal="true"
+                android:layout_width="30dp"
+                android:layout_height="30dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center_vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:id="@+id/ST_reward_coins"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="1000"
+                        android:layout_gravity="left"
+                        android:textColor="@color/black"
+                        android:textSize="12dp"
+                        android:textStyle="bold"
+                        android:layout_marginStart="15dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=" Coins"
+                        android:layout_gravity="left"
+                        android:textColor="@color/black"
+                        android:textSize="12dp"
+                        android:textStyle="bold"/>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Scratch "
+                        android:layout_gravity="left"
+                        android:textColor="@color/Dark_grey"
+                        android:textSize="10dp"
+                        android:layout_marginStart="15dp"/>
+                    <TextView
+                        android:id="@+id/ST_reward_task"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="30"
+                        android:layout_gravity="left"
+                        android:textColor="@color/Dark_grey"
+                        android:textSize="10dp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=" cards to unlock this reward"
+                        android:layout_gravity="left"
+                        android:layout_marginTop="5dp"
+                        android:textColor="@color/Dark_grey"
+                        android:textSize="10dp"/>
+
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!-- todo: bottom layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/pink500_bottom_radius_background"
+        android:orientation="horizontal">
+
+        <!-- todo: collect now layout -->
+        <LinearLayout
+            android:id="@+id/ST_reward_claim_layout"
+            android:visibility="gone"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/ST_reward_claim_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Collect reward"
+                android:textSize="10dp"
+                android:textColor="@color/white"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:layout_margin="10dp"
+                android:background="@color/pink_200"/>
+
+
+        </LinearLayout>
+
+        <!-- todo: status layout -->
+        <LinearLayout
+            android:id="@+id/ST_counter_layout"
+            android:visibility="visible"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:paddingTop="12dp"
+            android:paddingBottom="12dp"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/ST_reward_counter_cards"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textColor="@color/pink_200"
+                android:textSize="12dp"
+                android:textStyle="bold"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="/"
+                android:textColor="@color/pink_200"
+                android:textSize="12dp"
+                android:textStyle="bold"/>
+            <TextView
+                android:id="@+id/ST_reward_task_no"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="100000"
+                android:textColor="@color/pink_200"
+                android:textSize="12dp"
+                android:textStyle="bold" />
+
+
+        </LinearLayout>
+
+        <!-- todo: collected layout -->
+        <LinearLayout
+            android:id="@+id/ST_reward_claimed_layout"
+            android:visibility="gone"
+            android:layout_weight="1"
+            android:layout_width="250dp"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Collected"
+                android:textSize="10dp"
+                android:textColor="@color/pink_200"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:layout_margin="10dp"
+                android:background="@color/pink_500"/>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    </LinearLayout>
+

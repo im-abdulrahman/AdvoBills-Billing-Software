@@ -1,0 +1,21 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.AdvoEarn" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <item name="colorPrimary">@color/pink_200</item>
+    </style>
+
+    <style name="Theme.AdvoEarn" parent="Base.Theme.AdvoEarn" />
+
+
+    <style name="Circular">
+        <item name="cornerSize">50%</item>
+    </style>
+
+
+    <style name="imageCorners">
+        <item name="cornerSizeTopLeft">10dp</item>
+        <item name="cornerSizeTopRight">10dp</item>
+    </style>
+
+</resources>

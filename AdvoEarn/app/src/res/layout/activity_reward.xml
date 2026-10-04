@@ -1,0 +1,381 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/Platinum"
+    tools:context=".Reward.RewardActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:elevation="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:gravity="center">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="150dp"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginTop="0dp"
+                            android:background="@color/pink_200">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:elevation="3dp"
+                                android:background="@color/pink_200"
+                                android:gravity="center_vertical"
+                                android:orientation="horizontal"
+                                android:layout_height="?actionBarSize">
+
+                            <LinearLayout
+                                android:layout_weight="1"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical"
+                                android:gravity="center_vertical">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Reward Store"
+                                    android:layout_gravity="left"
+                                    android:textColor="@color/white"
+                                    android:textSize="17dp"
+                                    android:textStyle="bold"
+                                    android:layout_marginStart="25dp"/>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="left"
+                                    android:layout_marginStart="25dp"
+                                    android:text="Balance: 000000"
+                                    android:textColor="@color/pink_500"
+                                    android:textSize="12dp"
+                                    android:textStyle="bold"
+                                    tools:ignore="TextSizeCheck" />
+
+                            </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_weight="1"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:orientation="vertical"
+                                    android:gravity="center_vertical">
+
+                                    <ImageView
+                                        android:layout_width="25dp"
+                                        android:layout_height="25dp"
+                                        android:src="@drawable/baseline_history_24"
+                                        app:tint="@color/white"
+                                        android:layout_marginEnd="25dp"
+                                        android:layout_gravity="right"/>
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginTop="90dp"
+                            android:layout_marginStart="25dp"
+                            android:layout_marginEnd="25dp"
+                            android:layout_marginBottom="10dp"
+                            android:background="@drawable/white_box_background"
+                            android:elevation="3dp">
+
+                            <HorizontalScrollView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal">
+
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginTop="20dp"
+                                    android:layout_marginBottom="20dp"
+                                    android:background="@color/white"
+                                    android:orientation="horizontal">
+
+                                    <LinearLayout
+                                        android:id="@+id/filter_btn_mystore"
+                                        android:layout_width="50dp"
+                                        android:layout_height="match_parent"
+                                        android:orientation="vertical"
+                                        android:layout_marginStart="15dp"
+                                        android:gravity="center">
+
+                                        <ImageView
+                                            android:id="@+id/filter_btn_mystore_IV"
+                                            android:src="@drawable/ic_bottombar_home"
+                                            android:scaleType="centerCrop"
+                                            android:padding="10dp"
+                                            android:layout_centerHorizontal="true"
+                                            android:layout_width="40dp"
+                                            android:tint="@color/pink_200"
+                                            android:background="@drawable/pink_box_background"
+                                            android:layout_height="40dp"
+                                            tools:ignore="UseAppTint" />
+
+                                        <TextView
+                                            android:id="@+id/filter_btn_mystore_TV"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:gravity="center"
+                                            android:maxLines="1"
+                                            android:text="MyStore"
+                                            android:textColor="@color/pink_200"
+                                            android:textSize="10dp"
+                                            android:textStyle="bold"
+                                            tools:ignore="TextSizeCheck" />
+
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:id="@+id/filter_btn_phonpe"
+                                        android:layout_width="50dp"
+                                        android:layout_height="match_parent"
+                                        android:orientation="vertical"
+                                        android:layout_marginStart="15dp"
+                                        android:gravity="center">
+
+                                        <ImageView
+                                            android:id="@+id/filter_btn_phonpe_IV"
+                                            android:src="@drawable/ic_bottombar_home"
+                                            android:scaleType="centerCrop"
+                                            android:padding="10dp"
+                                            android:layout_centerHorizontal="true"
+                                            android:layout_width="40dp"
+                                            android:background="@drawable/silver_box_background"
+                                            android:layout_height="40dp"/>
+
+                                        <TextView
+                                            android:id="@+id/filter_btn_phonpe_TV"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:gravity="center"
+                                            android:maxLines="1"
+                                            android:text="PhonePe"
+                                            android:textColor="@color/Dark_grey"
+                                            android:textSize="10dp"
+                                            android:textStyle="bold"
+                                            tools:ignore="TextSizeCheck" />
+
+                                    </LinearLayout>
+                                    <LinearLayout
+                                        android:id="@+id/filter_btn_playstore"
+                                        android:layout_width="50dp"
+                                        android:layout_height="match_parent"
+                                        android:orientation="vertical"
+                                        android:layout_marginStart="15dp"
+                                        android:gravity="center">
+
+                                        <ImageView
+                                            android:id="@+id/filter_btn_playstore_IV"
+                                            android:src="@drawable/ic_bottombar_home"
+                                            android:scaleType="centerCrop"
+                                            android:padding="10dp"
+                                            android:layout_centerHorizontal="true"
+                                            android:layout_width="40dp"
+                                            android:background="@drawable/silver_box_background"
+                                            android:layout_height="40dp"/>
+
+                                        <TextView
+                                            android:id="@+id/filter_btn_playstore_TV"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:gravity="center"
+                                            android:maxLines="1"
+                                            android:text="PlayStore"
+                                            android:textColor="@color/Dark_grey"
+                                            android:textSize="10dp"
+                                            android:textStyle="bold"
+                                            tools:ignore="TextSizeCheck" />
+
+                                    </LinearLayout>
+                                    <LinearLayout
+                                        android:id="@+id/filter_btn_flipkart"
+                                        android:layout_width="50dp"
+                                        android:layout_height="match_parent"
+                                        android:orientation="vertical"
+                                        android:layout_marginStart="15dp"
+                                        android:gravity="center">
+
+                                        <ImageView
+                                            android:id="@+id/filter_btn_flipkart_IV"
+                                            android:src="@drawable/ic_bottombar_home"
+                                            android:scaleType="centerCrop"
+                                            android:padding="10dp"
+                                            android:layout_centerHorizontal="true"
+                                            android:layout_width="40dp"
+                                            android:background="@drawable/silver_box_background"
+                                            android:layout_height="40dp"/>
+
+                                        <TextView
+                                            android:id="@+id/filter_btn_flipkart_TV"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:gravity="center"
+                                            android:maxLines="1"
+                                            android:text="Flipkart"
+                                            android:textColor="@color/Dark_grey"
+                                            android:textSize="10dp"
+                                            android:textStyle="bold"
+                                            tools:ignore="TextSizeCheck" />
+
+                                    </LinearLayout>
+                                    <LinearLayout
+                                        android:id="@+id/filter_btn_amazon"
+                                        android:layout_width="50dp"
+                                        android:layout_height="match_parent"
+                                        android:orientation="vertical"
+                                        android:layout_marginStart="15dp"
+                                        android:layout_marginEnd="15dp"
+                                        android:gravity="center">
+
+                                        <ImageView
+                                            android:id="@+id/filter_btn_amazon_IV"
+                                            android:src="@drawable/ic_bottombar_home"
+                                            android:scaleType="centerCrop"
+                                            android:padding="10dp"
+                                            android:layout_centerHorizontal="true"
+                                            android:layout_width="40dp"
+                                            android:background="@drawable/silver_box_background"
+                                            android:layout_height="40dp"/>
+
+                                        <TextView
+                                            android:id="@+id/filter_btn_amazon_TV"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:gravity="center"
+                                            android:maxLines="1"
+                                            android:text="Amazon"
+                                            android:textColor="@color/Dark_grey"
+                                            android:textSize="10dp"
+                                            android:textStyle="bold"
+                                            tools:ignore="TextSizeCheck" />
+
+                                    </LinearLayout>
+
+                                </LinearLayout>
+
+                            </HorizontalScrollView>
+
+
+                        </RelativeLayout>
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <!-- todo : mystore !-->
+                <LinearLayout
+                    android:id="@+id/products_reward_mystore"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:visibility="gone"
+                    android:orientation="vertical">
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/RV_products_reward_mystore"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="100dp"/>
+
+                </LinearLayout>
+
+                <!-- todo : phonepe !-->
+                <LinearLayout
+                android:id="@+id/products_reward_phonpe"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="gone"
+                android:orientation="vertical">
+
+                <include
+                    layout="@layout/layout_wr_phonpe"/>
+
+            </LinearLayout>
+
+                <!-- todo : playstore !-->
+                <LinearLayout
+                    android:id="@+id/products_reward_playstore"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:visibility="gone"
+                    android:orientation="vertical">
+
+                    <include
+                        layout="@layout/layout_wr_playstore"/>
+
+                </LinearLayout>
+
+                <!-- todo : flipkart !-->
+                <LinearLayout
+                    android:id="@+id/products_reward_flipkart"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:visibility="gone"
+                    android:orientation="vertical">
+
+                    <include
+                        layout="@layout/layout_wr_flipkart"/>
+
+                </LinearLayout>
+
+                <!-- todo : amazon !-->
+                <LinearLayout
+                    android:id="@+id/products_reward_amazon"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:visibility="gone"
+                    android:orientation="vertical">
+
+                    <include
+                        layout="@layout/layout_wr_amazon"/>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+        </ScrollView>
+
+    </LinearLayout>
+
+    <include
+        android:id="@+id/bottom_navi_final"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:layout_alignParentBottom="true"
+        layout="@layout/fragment_bottom_navigation"/>
+
+</RelativeLayout>
