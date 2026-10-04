@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "201949793776",
+    "firebase_url": "https://grow-nanded-default-rtdb.firebaseio.com",
+    "project_id": "grow-nanded",
+    "storage_bucket": "grow-nanded.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:201949793776:android:dc744170aa9bb6deaa2135",
+        "android_client_info": {
+          "package_name": "com.example.grownanded"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "201949793776-i0onik6hsq47c98v6soaoo9qlcotllci.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.grownanded",
+            "certificate_hash": "57821c760ccc9369b9e01ac9da83408531f595c5"
+          }
+        },
+        {
+          "client_id": "201949793776-f5lkeart544bng1urlu4rg4b1cm5uoit.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCF_6l6BTy-Y9RLqqf0fc1byvGkObGLBdE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "201949793776-6nm6sf3f833s1k582avo0670rmheg14g.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
